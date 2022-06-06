@@ -1,57 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+     
     <meta charset="UTF-8">
       <link rel="stylesheet" href="./style.css"/>
-    <title>My Personal Website</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>My Portfolio</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <h2 class="jsstyle">First project</h2>
-    <p class="outset">This is my first project
-        It will without a doubt will be absolutely terrible but I will be gradually  improving.
-        Gradually getting better and better.
-        <div class="polaroid">
-    </p>
-    <a target="_blank" href="https://en.wikipedia.org/wiki/Red-throated_barbet">
-        <img src="https://cdn.pixabay.com/photo/2022/02/20/13/56/red-throated-barbet-7024605_960_720.jpg" 
-        alt="Red throated barbet"/>
-        <div class="container">
-        <p>This is an image of a Red throated barbet</p>
-      
-        <p>
-          The red-throated barbet (Psilopogon mystacophanos) is a species of bird in the family Megalaimidae. 
-          It is found in Brunei, Indonesia, Malaysia, Myanmar, Singapore, and Thailand. Its natural habitats 
-          are subtropical or tropical moist lowland forest and subtropical or tropical swamps. It is threatened by habitat loss.
-        </p>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo"><a href="#">Portfolio<span>li.o</span></a></div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <!-- <div class="menu-btn">
+          <i class="fas-bars"></i>
+        </div> -->
       </div>
-      </div>
-      <div class="polaroid">
-        <a target="_blank" href="https://en.wikipedia.org/wiki/Great_horned_owl">
-        <img src="https://media.istockphoto.com/photos/great-horned-owl-bubo-virginianus-subarcticus-picture-id108528773"
-        alt="Great horned owl"/>
-        <div>
-          <p>The great horned owl</p>
-          <p>
-            The great horned owl (Bubo virginianus), also known as the tiger owl (originally derived from early
-             naturalists' description as the "winged tiger" or "tiger of the air"), or the hoot owl,[3] is a large 
-             owl native to the Americas. It is an extremely adaptable bird with a vast range and is the most widely 
-             distributed true owl in the Americas.
-          </p>
+    </nav>
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">Hello, my name is </div>
+          <div class="text-2">Collins Mwangi</div>
+          <div class="text-3">I am currently a University student</div>
         </div>
       </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="max-width">
+        <h2 class="title">My Skills</h2>
+          <div>
+            <p>
+              I have minimal knowledge in CSS, HTML and JavaScript.<br>
+              I have a good understanding in both C and C++.
+            </p>
+          </div>
+        </div>
+      </div>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+         <div class="column left">
+           <img src="images/IMG_20220606_104149_8.jpg" alt="Me">
+         </div>
+         <div class="column right">
+           <div class="text">My name is Collins</div>
+           <p>
+             I am currently a university student persuing a degree in computer science.
+             I am also persuing a certification in software development.
+             The reason I got into the tech world is because it provides various wonderful
+             opportunities.
+           </p>
+         </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contacts -->
+    <section class="contacts" id="contacts">
+     <div class="max-width">
+       <h2 class="title">Contact Me</h2>
+       
+       <ul>
+         <i class="fa fa-envelope"></i>
+         <il>	collins.mwangi@student.moringaschool.com</il>
+       </ul>
+     </div>
+    </section>
 
-      <div class="about-section">
-        <div clas="footer_link">
-            <a href="/">About us</a>
-            <br>
-            <a href="/">Resources</a>
-        </div>
-      </div>
-      
-    
-      
-    
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,45 +1,199 @@
-h1{
-    background-color: blue;
-    text-align: center;
-}
-body {
-    background: wheat;
-}
-
-p{
-    color: green;
-}
-p.outset{
-    border-style: outset;
-}
-div.polaroid {
-    width: 70%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-  }
-  
-  div.container {
-    text-align: center;
-    padding: 10px 20px;
+/* :root{
+  --color-primary:white ;
+  --color-secondary: #274e69;
+  --color-white: #fffff;
+  } */
+  body {
+  /* background-color: var(--color-primary); */
+  font-family: 'Poppins', sans-serif;
+  /* font: size 1.1rem; */
+  /* color: white; */
   }
 
-  img {
-    display:block
-    border: 100px solid #ddd;
-    border-radius: 60px;
-    padding: 5px;
-    width: 150px;
+  .max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto ;
+  }
+
+  /* navbar */
+  .navbar{
+    position: fixed;
+    width: 100%;
+    padding: 35px 0;
+    /* background: red;  */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.3 ease;
+  }
+  .navbar.sticky{
+    padding: 15px ;
+    background: red;
   }
   
-  img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  .navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
   }
-  
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: gray;
+  .navbar .logo a{
+    color: wheat;
+    font-size: 35px;
+    font-weight:600;
+  }
+
+  .navbar .logo a span{
+    color: red;
+    transition: all 0.3 ease;
+
+  }
+
+  .navbar.sticky.logo a span{
+    color: wheat;
+  }
+
+
+  .navbar.menu li{
+    list-style: none  ;
+    display: inline-block;
+  }
+
+  .navbar .menu li a{
+    color: wheat;
+    font-weight: 500;
+    font-size: large;
+    margin-left: 25px;
+    transition: color 0.5s ease;
+  }
+  .navbar .menu li a:hover{
+    color: red;
+
+  }
+  /* menu */
+  /* .menu-btn{
     color: white;
-  }
-  
+    font-size: 23px;
+    cursor: pointer;
+  } */
+
+/* home */
+.home{
+  display: flex;
+  background:black;
+  /* background: url(images/skyler-ewing-O8yBMPlXICw-unsplash.jpg) no-repeat center; */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: aliceblue;
+  min-height: 500px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.home .max-width{
+  margin: auto 0 auto 40px;
+
+}
+.home .home-content .text-1{
+  font-size: 27px;
+
+}
+
+.home .home-content .text-2{
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-content .text-2:hover{
+  color: red;
+  transition: 0.3s ease;
+}
+
+.home .home-content .text-3{
+  font-size: 40px;
+  margin: spx o;
+}
+
+/* Skills */
+.skills .title{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+
+/* About */
+section{
+  padding: 100px 0;
+}
+.about{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.about .title{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+
+}
+/* 
+ .about .title::before{ 
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: black;
+  transform:translateX(50%)
+} */
+
+ .about .title{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
+ }
+
+.about .about-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.about .about-content .left{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about .about-content .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+
+}
+
+
+.about .about-content .right{
+  width: 55%;
+}
+
+ 
+.about .about-content .right .text{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* contacts */
+.contact .title {
+  text-align: center;
+}
